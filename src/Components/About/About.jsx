@@ -1,11 +1,11 @@
 import React from 'react';
-import './app.css'
-const App = () => {
+
+const About = () => {
     return (
         <div>
-            Working
+            About
         </div>
     );
 }
 
-export default App;
+export default About;

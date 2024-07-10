@@ -9,6 +9,7 @@
     --greyBg: hsl(0, 0%, 96%);
     --greyText: rgb(190, 190, 190);
     --inputColor: hsl(330, 12%, 97%);
+    --greyColor: rgb(122, 119, 119);
 }
 
 .navBarSection{
@@ -33,6 +34,7 @@
                 .icon{
                     color: var(--PrimaryColor);
                     font-size: 25px;
+                    margin-right: 10px;
                 }
             }
         }
@@ -126,5 +128,10 @@
                 }
             }
         }
+    }
+
+    .activeHeader{
+        background: var(--greyColor);
+        box-shadow: 0 2px 8px 2px rgba(178,178,178,0.45);
     }
 }

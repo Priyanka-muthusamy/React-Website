@@ -8,6 +8,8 @@ import {MdAirportShuttle} from 'react-icons/md'
 import {MdLocationOn} from 'react-icons/md'
 import {BsArrowRightShort} from 'react-icons/bs'
 
+import img from '../../Assets/peru-house.jpeg';
+
 const Offer = () => {
     return (
         <section className='offer conatiner section'>
@@ -25,7 +27,7 @@ const Offer = () => {
 
                 <div className="singleOffer">
                     <div className="destImage">
-                        <img src="" alt="Image Name" />
+                        <img src={img} alt="Image Name" />
 
                         <span className="discount">
                             30% off
@@ -66,9 +68,9 @@ const Offer = () => {
                             <small>450 Vine #310, London</small>
                         </div>
 
-                        <button className='btn flex'>
+                        <button className="btn flex">
                             View Details
-                            <BsArrowRightShort className='icon' />
+                            <BsArrowRightShort className="icon"/>
                         </button>
                     </div>
                 </div>

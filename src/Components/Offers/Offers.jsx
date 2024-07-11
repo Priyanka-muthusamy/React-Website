@@ -1,11 +1,14 @@
 import React from 'react';
-import './offers.css';
+import './offers.scss';
 
 import {MdKingBed} from 'react-icons/md'
 import {MdBathtub} from 'react-icons/md'
 import {FaWifi} from 'react-icons/fa'
 import {MdAirportShuttle} from 'react-icons/md'
 import {MdLocationOn} from 'react-icons/md'
+import {BsArrowRightShort} from 'react-icons/bs'
+
+import img from '../../Assets/peru-house.jpeg';
 
 const Offer = () => {
     return (
@@ -24,7 +27,7 @@ const Offer = () => {
 
                 <div className="singleOffer">
                     <div className="destImage">
-                        <img src="" alt="Image Name" />
+                        <img src={img} alt="Image Name" />
 
                         <span className="discount">
                             30% off
@@ -62,7 +65,13 @@ const Offer = () => {
 
                         <div className="location flex">
                             <MdLocationOn className="icon"/>
+                            <small>450 Vine #310, London</small>
                         </div>
+
+                        <button className="btn flex">
+                            View Details
+                            <BsArrowRightShort className="icon"/>
+                        </button>
                     </div>
                 </div>
 

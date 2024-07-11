@@ -37,8 +37,7 @@ const Data = [
         destTitle: 'Taj Mahal',
         location: 'India',
         grade: 'CULTURAL RELAX'
-    },
-
+    }
 ]
 
 const Popular = () => {

@@ -59,7 +59,7 @@
 
                 }
                     
-                    .offerBody{
+                .offerBody{
                         padding: 1rem;
 
                         .price{
@@ -110,13 +110,13 @@
                                 color: var(--whiteColor);
                             }
                         }
-                    }
-
-                    &:hover{
-                        transform: translateY(-7px);
-                    }
-
                 }
+
+                &:hover{
+                        transform: translateY(-7px);
+                }
+
             }
         }
     }
+}

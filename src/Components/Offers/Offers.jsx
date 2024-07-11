@@ -1,11 +1,12 @@
 import React from 'react';
-import './offers.css';
+import './offers.scss';
 
 import {MdKingBed} from 'react-icons/md'
 import {MdBathtub} from 'react-icons/md'
 import {FaWifi} from 'react-icons/fa'
 import {MdAirportShuttle} from 'react-icons/md'
 import {MdLocationOn} from 'react-icons/md'
+import {BsArrowRightShort} from 'react-icons/bs'
 
 const Offer = () => {
     return (
@@ -62,7 +63,13 @@ const Offer = () => {
 
                         <div className="location flex">
                             <MdLocationOn className="icon"/>
+                            <small>450 Vine #310, London</small>
                         </div>
+
+                        <button className='btn flex'>
+                            View Details
+                            <BsArrowRightShort className='icon' />
+                        </button>
                     </div>
                 </div>
 

@@ -73,3 +73,13 @@
         }
     }
 }
+
+// MEDIA QUERIES
+
+@media screen and (min-width: 884px) {
+    .blog{
+        .mainContainer{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

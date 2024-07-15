@@ -1,31 +1,38 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './footer.scss';
 import { GiCampfire } from 'react-icons/gi';
 import { ImFacebook } from 'react-icons/im';
 import { BsTwitterX } from 'react-icons/bs';
 import { AiFillInstagram } from 'react-icons/ai';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Footer = () => {
+
+    useEffect(() => {
+        Aos.init({duration: 2000})
+    }, [])
+
     return (
         <div className="footer">
             <div className="secContainer container grid">
-                <div className="logoDiv">
+                <div data-aos="fade-up" data-aos-duration="2000" className="logoDiv">
 
-                    <div className="footerLogo">
+                    <div data-aos="fade-up" data-aos-duration="2000" className="footerLogo">
                         <a href="#" className="logo flex">
                             <h1 className='flex'><GiCampfire className='icon' />
                                 Exotic</h1>
                         </a>
                     </div>
 
-                    <div className="socials flex">
+                    <div data-aos="fade-up" data-aos-duration="3000" className="socials flex">
                         <ImFacebook className='icon' />
                         <BsTwitterX className='icon' />
                         <AiFillInstagram className='icon' />
                     </div>
                 </div>
                 
-                <div className="footerLinks">
+                <div data-aos="fade-up" data-aos-duration="3000" className="footerLinks">
                     <span className="linkTitle">
                         Helpful Links
                     </span>
@@ -43,7 +50,7 @@ const Footer = () => {
                     </li>
                 </div>
 
-                <div className="footerLinks">
+                <div data-aos="fade-up" data-aos-duration="4000" className="footerLinks">
                     <span className="linkTitle">
                         Information
                     </span>
@@ -61,7 +68,7 @@ const Footer = () => {
                     </li>
                 </div>
 
-                <div className="footerLinks">
+                <div data-aos="fade-up" data-aos-duration="5000" className="footerLinks">
                     <span className="linkTitle">
                         Contact Us
                     </span>

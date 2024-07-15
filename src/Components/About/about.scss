@@ -94,3 +94,43 @@
         }
     }
 }
+
+// MEDIA QUERIES
+
+@media screen and (min-width: 720px) {
+    .about{
+        .secContainer{
+            .videoCard{
+                .cardContent{
+                    gap: 4rem;
+                    padding: 4rem 3rem;
+
+                    .cardText{
+                        h2{
+                            font-size: 2rem;
+                        }
+
+                        p{
+                            opacity: .7;
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                .cardContent{
+                    grid-template-columns: repeat(2,1fr) !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about{
+        .secContainer{
+            .mainContent{
+                padding: 2.5rem 0;
+            }
+        }
+    }
+}
